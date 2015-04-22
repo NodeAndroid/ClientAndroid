@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/main_list_background">
+
+    <com.andexert.library.RippleView
+        xmlns:ripple="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        ripple:rv_type="rectangle"
+        ripple:rv_rippleDuration="600"
+        ripple:rv_color="@color/ripple_shadow">
+
+        <it.gmariotti.cardslib.library.view.CardViewNative
+            android:id="@+id/carddemo_largeimage_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card:card_layout_resourceID="@layout/native_material_largeimage_text_card"
+            style="@style/card_external" />
+
+    </com.andexert.library.RippleView>
+</FrameLayout>

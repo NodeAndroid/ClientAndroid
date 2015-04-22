@@ -1,0 +1,248 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/actionbar_color"
+    android:fitsSystemWindows="true">
+
+    <com.yalantis.phoenix.PullToRefreshView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/base_pull_to_refresh">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/detail_background">
+
+            <LinearLayout
+                android:id="@+id/test"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <it.gmariotti.cardslib.library.view.CardViewNative
+                    android:id="@+id/detail_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/card_external" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/detail_time"
+                    android:orientation="horizontal"
+                    android:background="@drawable/card">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/clock"
+                        android:layout_gravity="center_vertical" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="15dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="6:00~8:00"
+                            android:textSize="16sp"
+                            android:id="@+id/start_end_time_txt"
+                            android:paddingTop="5dp" />
+
+                        <TextView
+                            android:id="@+id/continued_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2个小时"
+                            android:textColor="@color/text_gray_white"
+                            android:textSize="14sp"
+                            android:layout_alignStart="@+id/date_txt"
+                            android:paddingTop="5dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="周六"
+                            android:textColor="@color/text_gray_white"
+                            android:textSize="14sp"
+                            android:layout_alignParentBottom="true"
+                            android:id="@+id/week_txt"
+                            android:paddingBottom="2dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="5月2日"
+                            android:textColor="@color/text_gray_white"
+                            android:textSize="14sp"
+                            android:layout_marginEnd="40dp"
+                            android:id="@+id/date_txt"
+                            android:layout_alignTop="@+id/week_txt"
+                            android:layout_alignParentEnd="true"
+                            android:paddingBottom="2dp" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/card">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/clock"
+                        android:layout_gravity="center_vertical" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="15dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="南校俱乐部"
+                            android:textSize="16sp"
+                            android:id="@+id/detail_location_txt"
+                            android:paddingTop="5dp" />
+
+                        <TextView
+                            android:id="@+id/distance_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_gray_white"
+                            android:text="距离这里"
+                            android:textSize="14sp"
+                            android:layout_alignStart="@+id/no_name_2"
+                            android:paddingTop="5dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="湖南科技大学"
+                            android:textColor="@color/text_gray_white"
+                            android:textSize="14sp"
+                            android:layout_alignParentBottom="true"
+                            android:id="@+id/detail_location_up_txt"
+                            android:paddingBottom="2dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_gray_white"
+                            android:textSize="14sp"
+                            android:layout_marginEnd="50dp"
+                            android:id="@+id/no_name_2"
+                            android:text="2公里"
+                            android:layout_alignTop="@+id/detail_location_up_txt"
+                            android:layout_alignParentEnd="true"
+                            android:paddingBottom="2dp" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/card">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/clock"
+                        android:layout_gravity="center_vertical" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="15dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="董森"
+                            android:textSize="16sp"
+                            android:id="@+id/charge_person_txt"
+                            android:paddingTop="5dp" />
+
+                        <TextView
+                            android:id="@+id/already_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_gray_white"
+                            android:text="已经参加"
+                            android:textSize="14sp"
+                            android:layout_alignStart="@+id/paerson_num_txt"
+                            android:paddingTop="5dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="负责人"
+                            android:textColor="@color/text_gray_white"
+                            android:textSize="14sp"
+                            android:layout_alignParentBottom="true"
+                            android:id="@+id/charge_person"
+                            android:paddingBottom="2dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_gray_white"
+                            android:textSize="14sp"
+                            android:layout_marginEnd="58dp"
+                            android:id="@+id/paerson_num_txt"
+                            android:text="30人"
+                            android:layout_alignTop="@+id/charge_person"
+                            android:layout_alignParentEnd="true"
+                            android:paddingBottom="2dp" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <com.dd.processbutton.iml.ActionProcessButton
+                    android:id="@+id/join_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/join"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    custom:pb_colorComplete="@color/green_complete"
+                    custom:pb_colorNormal="@color/blue_normal"
+                    custom:pb_colorPressed="@color/blue_pressed"
+                    custom:pb_colorProgress="@color/purple_progress"
+                    custom:pb_textComplete="@string/Registration_Success"
+                    custom:pb_textProgress="@string/Registration" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/card">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="240dp"
+                        android:src="@drawable/sea" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+    </com.yalantis.phoenix.PullToRefreshView>
+</LinearLayout>

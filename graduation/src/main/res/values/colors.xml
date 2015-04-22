@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="main_background">#ffffffff</color>
+    <color name="actionbar_color">#0077d9</color>
+    <color name="drawer_arrow_second_color">#303f9f</color>
+    <color name="shadow">#66000000</color>
+
+    <color name="ripple_shadow">#33000000</color>
+
+    <color name="body_text_1">#de000000</color>
+    <color name="text_white">#ffffffff</color>
+
+    <color name="saffron">#F4B63E</color>
+    <color name="eggplant">#663D4E</color>
+    <color name="sienna">#EB6460</color>
+    <!--list-->
+    <color name="main_list_background">#ffdddddd</color>
+    <!--detail-->
+    <color name="text_title">#ffffffff</color>
+    <color name="detail_background">#ededed</color>
+    <color name="text_gray">#ff4a4a4a</color>
+    <color name="text_gray_white">#747474</color>
+    <color name="detail_introduction_background">#be6aff37</color>
+    <color name="division">#ffdadada</color>
+
+</resources>

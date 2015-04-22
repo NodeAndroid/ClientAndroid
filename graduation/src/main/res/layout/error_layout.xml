@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:background="@color/main_background">
+
+    <View
+        android:id="@+id/error_status"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/status_height"
+        android:background="@color/actionbar_color"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/error_status"
+        android:text="@string/loding_error"
+        android:textSize="22sp"/>
+
+</RelativeLayout>
