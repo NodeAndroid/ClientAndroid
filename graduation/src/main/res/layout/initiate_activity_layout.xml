@@ -33,6 +33,7 @@
             android:background="@color/division" />
 
         <LinearLayout
+            android:id="@+id/activity_location_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingTop="@dimen/initiate_padding_top"

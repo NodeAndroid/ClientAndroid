@@ -52,5 +52,6 @@ dependencies {
     compile 'com.github.j4velin.PictureChooser:picturechooser:+'
     //circleimageview
     compile 'de.hdodenhof:circleimageview:1.2.2'
-
+    compile files('libs/baidumapapi_v3_4_0.jar')
+    compile files('libs/locSDK_5.0.jar')
 }
