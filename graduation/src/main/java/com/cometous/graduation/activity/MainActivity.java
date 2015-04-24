@@ -11,7 +11,9 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import com.cometous.graduation.R;
@@ -19,6 +21,7 @@ import com.cometous.graduation.adapter.DrawerAdapter;
 import com.cometous.graduation.adapter.MainListAdapter;
 import com.ikimuhendis.ldrawer.ActionBarDrawerToggle;
 import com.ikimuhendis.ldrawer.DrawerArrowDrawable;
+import com.squareup.picasso.Picasso;
 import com.yalantis.phoenix.PullToRefreshView;
 
 import java.util.ArrayList;
@@ -118,7 +121,9 @@ public class MainActivity extends Activity {
 
         DrawerAdapter drawerAdapter = new DrawerAdapter(this);
         mDrawerList.setAdapter(drawerAdapter);
-        mDrawerList.addHeaderView(getLayoutInflater().inflate(R.layout.darwer_head_layout,null));
+        RelativeLayout headlayout = (RelativeLayout) getLayoutInflater().inflate(R.layout.darwer_head_layout,null);
+        Picasso.with(MainActivity.this).load("http://c2i.zhuoxiu.com.cn//upload/desk/576x373/1210/1351510593_4035.jpg").into((ImageView) headlayout.findViewById(R.id.head_img));
+        mDrawerList.addHeaderView(headlayout);
         mDrawerList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view,
