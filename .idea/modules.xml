@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/ConeToUs.iml" filepath="$PROJECT_DIR$/ConeToUs.iml" />
       <module fileurl="file://$PROJECT_DIR$/graduation/graduation.iml" filepath="$PROJECT_DIR$/graduation/graduation.iml" />
       <module fileurl="file://$PROJECT_DIR$/librarys/pullToRefresh/pullToRefresh.iml" filepath="$PROJECT_DIR$/librarys/pullToRefresh/pullToRefresh.iml" />
+      <module fileurl="file://$PROJECT_DIR$/librarys/slideDateTimePicker/slideDateTimePicker.iml" filepath="$PROJECT_DIR$/librarys/slideDateTimePicker/slideDateTimePicker.iml" />
     </modules>
   </component>
 </project>

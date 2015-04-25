@@ -11,6 +11,7 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/graduation" />
             <option value="$PROJECT_DIR$/librarys/pullToRefresh" />
+            <option value="$PROJECT_DIR$/librarys/slideDateTimePicker" />
           </set>
         </option>
       </GradleProjectSettings>

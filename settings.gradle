@@ -1,2 +1,3 @@
-include ':graduation', ':pullToRefresh'
+include ':graduation', ':pullToRefresh', ':slideDateTimePicker'
 project(':pullToRefresh').projectDir = new File('librarys/pullToRefresh')
+project(':slideDateTimePicker').projectDir = new File('librarys/slideDateTimePicker')
